@@ -2175,7 +2175,7 @@
     }
     function isOutsideBoundary(handlerInstance, x, y) {
         var painter = handlerInstance.painter;
-        return x < 0 || x > painter.getWidth() || y < 0 || y > painter.getHeight();
+        return x < 0 || x > painter.getWidth() + 40 || y < 0 || y > painter.getHeight() + 40;
     }
 
     var DEFAULT_MIN_MERGE = 32;

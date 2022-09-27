@@ -541,7 +541,7 @@ function setHoverTarget(
  */
 function isOutsideBoundary(handlerInstance: Handler, x: number, y: number) {
     const painter = handlerInstance.painter;
-    return x < 0 || x > painter.getWidth() || y < 0 || y > painter.getHeight();
+    return x < 0 || x > painter.getWidth() + 40 || y < 0 || y > painter.getHeight() + 40;
 }
 
 export default Handler;
